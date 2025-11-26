@@ -23,6 +23,41 @@ To write a Python program to:
 
 ## 🧪 Program: 
 
+q = []
+
+n = int(input())
+for i in range(n):
+    value = int(input())
+    q.append(value)
+
+q.pop(0)
+q.pop(0)
+
+q.sort(reverse=True)
+
+print(q)
+
+
 ### Output:
 
+Input:
+5
+10
+40
+20
+60
+30
+
+Output:
+[60, 40, 30]
+
+
 ## Result:
+
+The program successfully:
+
+Accepts values into a queue
+
+Removes two elements in FIFO order
+
+Displays the remaining queue elements in descending order
