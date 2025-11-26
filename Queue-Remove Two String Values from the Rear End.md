@@ -21,8 +21,40 @@ To write a Python program to:
 6. Display the updated list.
 
 ##  Program:
-Add Code Here
+
+q = []
+
+n = int(input())
+for i in range(n):
+    s = input()
+    q.append(s)
+
+q.pop()
+q.pop()
+
+print(q)
+
 
 ### Output:
 
+Input:
+5
+apple
+mango
+banana
+grapes
+orange
+
+Output:
+['apple', 'mango', 'banana']
+
+
 ## Result:
+
+The program successfully:
+
+Accepts string values from the user into a queue
+
+Removes two elements from the rear end
+
+Displays the updated queue after removal
