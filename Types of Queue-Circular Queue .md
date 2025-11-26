@@ -27,8 +27,68 @@ To develop a Python program that implements a Circular Queue:
 ---
 
 ## 💻 Program:
-Add Code Here
+
+class CircularQueue:
+    def __init__(self, size):
+        self.size = size
+        self.queue = [None] * size
+        self.front = -1
+        self.rear = -1
+
+    def enqueue(self, data):
+        if (self.rear + 1) % self.size == self.front:
+            return  # Queue is full
+        elif self.front == -1:
+            self.front = 0
+            self.rear = 0
+            self.queue[self.rear] = data
+        else:
+            self.rear = (self.rear + 1) % self.size
+            self.queue[self.rear] = data
+
+    def dequeue(self):
+        if self.front == -1:
+            return None  # Queue empty
+        data = self.queue[self.front]
+        if self.front == self.rear:
+            self.front = -1
+            self.rear = -1
+        else:
+            self.front = (self.front + 1) % self.size
+        return data
+
+
+cq = CircularQueue(5)
+
+removed = []
+
+for i in range(3):
+    value = input()
+    cq.enqueue(value)
+
+for i in range(3):
+    removed.append(cq.dequeue())
+
+print("Removed values:", removed)
 
 ### Output:
 
+Input:
+apple
+banana
+grape
+
+Output:
+Removed values: ['apple', 'banana', 'grape']
+
 ## Result:
+
+The program successfully:
+
+Implements a Circular Queue
+
+Accepts 3 input values using enqueue()
+
+Removes the values using dequeue()
+
+Displays the removed values in the order they were removed (FIFO)
