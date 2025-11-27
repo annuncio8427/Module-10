@@ -28,6 +28,7 @@ To develop a Python program that implements a Circular Queue:
 
 ## 💻 Program:
 
+```python
 class CircularQueue:
     def __init__(self, size):
         self.size = size
@@ -57,11 +58,8 @@ class CircularQueue:
             self.front = (self.front + 1) % self.size
         return data
 
-
 cq = CircularQueue(5)
-
 removed = []
-
 for i in range(3):
     value = input()
     cq.enqueue(value)
@@ -69,26 +67,5 @@ for i in range(3):
 for i in range(3):
     removed.append(cq.dequeue())
 
-print("Removed values:", removed)
-
-### Output:
-
-Input:
-apple
-banana
-grape
-
-Output:
-Removed values: ['apple', 'banana', 'grape']
-
-## Result:
-
-The program successfully:
-
-Implements a Circular Queue
-
-Accepts 3 input values using enqueue()
-
-Removes the values using dequeue()
-
-Displays the removed values in the order they were removed (FIFO)
+print(removed)
+```
