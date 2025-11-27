@@ -21,12 +21,12 @@ To create a Python program that:
 5. Use `full()` to check if the stack is full and print the result.
 6. Use `get()` repeatedly to pop and print elements in reverse order.
 
-## Program
+## 📝 Program
 
+```python
 from queue import LifoQueue
 
 stack = LifoQueue(maxsize=7)
-
 n = int(input())
 for i in range(n):
     value = input()
@@ -41,19 +41,22 @@ else:
 print("Stack elements in LIFO order:")
 while not stack.empty():
     print(stack.get())
-
+```
 
 ## 🧪 Sample Input and Output
 
-Input:
+**Input:**
+```
 5
 apple
 orange
 grape
 banana
 melon
+```
 
-Output:
+**Output:**
+```
 Stack is not full
 Stack elements in LIFO order:
 melon
@@ -61,16 +64,12 @@ banana
 grape
 orange
 apple
-
+```
 
 ## Result:
 
 The program successfully:
-
-Implements a stack using LifoQueue with a maximum size of 7
-
-Accepts and stores user input values
-
-Checks whether the stack is full or not
-
-Removes and prints the elements in LIFO (reverse) order
+- Implements a stack using LifoQueue with a maximum size of 7
+- Accepts and stores user input values
+- Checks whether the stack is full or not
+- Removes and prints the elements in LIFO (reverse) order
