@@ -21,43 +21,37 @@ To write a Python program to:
 6. Sort the list in descending order.
 7. Print the updated list.
 
-## 🧪 Program: 
+## 🧪 Program:
 
+```python
 q = []
-
 n = int(input())
 for i in range(n):
     value = int(input())
     q.append(value)
-
 q.pop(0)
 q.pop(0)
-
 q.sort(reverse=True)
-
 print(q)
-
+```
 
 ### Output:
 
-Input:
+**Input:**
+```
 5
 10
 40
 20
 60
 30
+```
 
-Output:
+**Output:**
+```
 [60, 40, 30]
-
+```
 
 ## Result:
 
-The program successfully:
-
-Accepts values into a queue
-
-Removes two elements in FIFO order
-
-Displays the remaining queue elements in descending order
+The program successfully removes the first two elements from the queue and displays the remaining values in descending order.
