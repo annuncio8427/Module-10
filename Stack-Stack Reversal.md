@@ -1,4 +1,4 @@
-# # Stack-Stack Reversal Program 🔁
+# Stack-Stack Reversal Program 🔁
 
 This Python program demonstrates how to reverse the values in a stack using basic stack operations like push and pop.
 
@@ -19,11 +19,10 @@ To write a Python program that reverses the values in a stack using standard sta
    - Append it to `reverse`.
 6. Print the reversed list.
 
+## 📝 Program:
 
-### Program:
-
+```python
 stack = []
-
 n = int(input())
 for i in range(n):
     value = int(input())
@@ -34,28 +33,27 @@ while stack:
     reverse.append(stack.pop())
 
 print(reverse)
-
+```
 
 ## 🧪 Sample Input and Output
 
-Input:
+**Input:**
+```
 5
 10
 20
 30
 40
 50
+```
 
-Output:
+**Output:**
+```
 [50, 40, 30, 20, 10]
+```
 
-
-## Result
+## Result:
 
 The program successfully:
-
-Implements a stack using a list
-
-Uses push and pop operations to reverse stack contents
-
-Displays the values in reversed order
+- Implements a stack using a list
+- Uses push and pop operations to reverse stack contents
