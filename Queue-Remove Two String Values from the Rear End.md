@@ -20,41 +20,38 @@ To write a Python program to:
 5. Remove the next last element using `pop()` again.
 6. Display the updated list.
 
-##  Program:
+## 📝 Program:
 
+```python
 q = []
-
 n = int(input())
 for i in range(n):
     s = input()
     q.append(s)
-
 q.pop()
 q.pop()
-
 print(q)
-
+```
 
 ### Output:
 
-Input:
+**Input:**
+```
 5
 apple
 mango
 banana
 grapes
 orange
+```
 
-Output:
+**Output:**
+```
 ['apple', 'mango', 'banana']
-
+```
 
 ## Result:
 
 The program successfully:
-
-Accepts string values from the user into a queue
-
-Removes two elements from the rear end
-
-Displays the updated queue after removal
+- Accepts string values from the user into a queue
+- Removes two elements from the rear end
